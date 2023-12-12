@@ -1,6 +1,11 @@
-<app-auth></app-auth>
-<a routerLink="/products" routerLinkActive="active">Products</a>
-<a routerLink="/cart" routerLinkActive="active">Cart</a>
-<a routerLink="/about" routerLinkActive="active">About</a>
+<mat-toolbar color="primary">
+  <span>My e-Shop</span>
+  <span class="spacer"></span>
+  <a mat-flat-button color="primary" routerLink="/products" routerLinkActive="active">Products</a>
+  <a mat-flat-button color="primary" routerLink="/cart" routerLinkActive="active">Cart</a>
+  <a mat-flat-button color="primary" routerLink="/about" routerLinkActive="active">About</a>
+  <app-auth></app-auth>
+</mat-toolbar>
+
 <router-outlet></router-outlet>
 

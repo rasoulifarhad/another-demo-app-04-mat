@@ -8,6 +8,8 @@ import { Observable } from 'rxjs';
 })
 export class AppComponent {
   title = 'another-demo-app';
+  isChecked = true;
+
   title$ = new Observable(observer => {
     setInterval(() => {
       observer.next();
